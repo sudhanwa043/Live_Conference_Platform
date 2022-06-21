@@ -11,8 +11,8 @@ const peerServer = ExpressPeerServer(server, {
 const path = require("path");
 
 app.set("view engine", "ejs");
-app.use("/public", express.static(path.join(__dirname, "/Static")));
-//app.use(express.static(__dirname + '/Static'));
+//app.use("/public", express.static(path.join(__dirname, "/Static")));
+app.use(express.static(__dirname + '/Static'));
 app.use("/peerjs", peerServer);
 
 app.get("/", (req,res) => {
