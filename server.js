@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/Static'));
 app.use("/peerjs", peerServer);
 
 app.get("/", (req,res) => {
-    res.sendFile(path.join(__dirname, "Static", "index1.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 })
 
 app.get("/join", (req, res) => {
