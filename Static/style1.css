@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Josefin+Sans:wght@300&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Josefin+Sans:wght@300;400;700&family=Merriweather+Sans:wght@700&family=Roboto:wght@100;700&display=swap');
+
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: rgb(136, 0, 136);
+    height: 12vh;
+    border-bottom: 1px solid;
+}
+
+.footer{
+    background-color: rgb(87, 1, 64);
+    height: 6vh;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.middle{
+    background-image: url("voilet.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theDivJoin, .theDivCreate {
+    height: 40vh;
+    width: 100vh;
+    background-color: rgb(252, 93, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.theDivCreate{
+    height: 30vh;   
+}
+
+.Enter{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(112, 3, 3);
+    font-weight: 500;
+    font-size: 3vh;
+    width: 80vh;
+    margin-bottom: 3vh;
+}
+
+.joinMeetingButton{
+    width: 81vh;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: rgb(101, 101, 245);
+    font-size: 3vh;
+    border-width: 0px;
+    height: 6vh;
+}
+
+.joinMeetingButton:hover{
+    background-color: rgb(14, 14, 145);
+    color: white;   
+}
+
+.flip{
+    background-color: rgb(101, 101, 245);
+    width: 100vh;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.flip:hover{
+    background-color: rgb(14, 14, 145);
+}
+
+#footerText{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 6vh;
+    padding-right: 20px;    
+}
+
+#headerText{
+    font-family: 'Joan', serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 6vh;
+    vertical-align: middle;
+    line-height: 12vh;
+    padding-left: 8vh;
+}
+
+#joinMeetingText1, #joinMeetingText2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+#panel1, #panel2 {
+    display: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/style1.css">
+    <title>Document</title>
+    <script> 
+        $(document).ready(function(){
+          $("#joinMeetingText1").click(function(){
+            $("#panel1").slideToggle("slow");
+          });
+        });
+    </script>
+    <script> 
+        $(document).ready(function(){
+          $("#joinMeetingText2").click(function(){
+            $("#panel2").slideToggle("slow");
+            $("#panel1").modal("hide");
+          });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a id="headerText">Video Conferencing Platform</a>
+    </header>
+    <main class="middle">
+        <div class="flip" id="joinMeetingText1">Join Meeting</div>
+        <div id="panel1">
+            <form class="theDivJoin" action="/joinold">
+                <input type="text" class="Enter" placeholder="Enter Your Name:" name="name">
+                <input type="text" class="Enter" placeholder="Enter Meeting ID:" name="meeting_id">   
+                <Button class="joinMeetingButton">Join</Button>   
+            </form>
+        </div>
+
+        <div class="flip" id="joinMeetingText2">New Meeting</div>
+        <div id="panel2">
+            <form class="theDivCreate" action="/join">
+                <input type="text" class="Enter" placeholder="Enter Your Name:" name="name">  
+                <Button class="joinMeetingButton">Start</Button>   
+            </form>
+        </div>    
+    </main>
+    <footer class="footer">
+        <a id="footerText">@Sudhanwa Ganesh Kulkarni</a>
+    </footer>
+</body>
+</html>
